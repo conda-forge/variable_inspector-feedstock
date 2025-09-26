@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-variable_inspector-green.svg)](https://anaconda.org/conda-forge/variable_inspector) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/variable_inspector.svg)](https://anaconda.org/conda-forge/variable_inspector) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/variable_inspector.svg)](https://anaconda.org/conda-forge/variable_inspector) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/variable_inspector.svg)](https://anaconda.org/conda-forge/variable_inspector) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-variable__inspector-green.svg)](https://anaconda.org/conda-forge/variable_inspector) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/variable_inspector.svg)](https://anaconda.org/conda-forge/variable_inspector) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/variable_inspector.svg)](https://anaconda.org/conda-forge/variable_inspector) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/variable_inspector.svg)](https://anaconda.org/conda-forge/variable_inspector) |
 
 Installing variable_inspector
 =============================

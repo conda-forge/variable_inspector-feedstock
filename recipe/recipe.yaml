@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: variable_inspector
-  version: 1.0.1
+  version: "1.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/variable_inspector-${{ version }}.tar.gz
-  sha256: 2806545159fb831bbd070ebac4243b801a1a5373d3204f6b7feb4521746a8288
+  sha256: ed8c0754342a81ef605dce1597dd48959b4e393f1fb9b6ca9f3c8f66c9ce1cc8
 
 build:
   number: 0
