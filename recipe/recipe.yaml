@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: variable_inspector
-  version: "1.1.0"
+  version: "1.4.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/variable_inspector-${{ version }}.tar.gz
-  sha256: ed8c0754342a81ef605dce1597dd48959b4e393f1fb9b6ca9f3c8f66c9ce1cc8
+  sha256: 225407d89660f33c344203e5f7140af92ddc91045d8cbacb7a59f9d103f32f9c
 
 build:
   number: 0
@@ -20,21 +20,24 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling >=1.5.0
-    - jupyterlab >=4.0.0,<5
+    - hatchling >=1.5.0,<1.32
+    - jupyterlab >=4.4.0,<5
     - hatch-nodejs-version >=0.3.2
     - pip
     # Hidden in tool.hatch.build.hooks.jupyter-builder.dependencies
     - hatch-jupyter-builder >=0.5
   run:
     - python >=${{ python_min }}
+    - jupyterlab >=4.2,<5
 
 tests:
   - python:
       imports:
         - variable_inspector
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/mljar/variable-inspector
